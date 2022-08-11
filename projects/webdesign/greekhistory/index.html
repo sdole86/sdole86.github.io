@@ -1,0 +1,53 @@
+<!-- Student: Samuel Dole, Class: CSCI1145, Date: 7/12/21-->
+<html>
+	<head>
+		<title>The History of Greece</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div id="wrapper">
+		
+		<header>
+			<img src="Images\banner.png" title="Banner">
+		</header>
+		
+		<nav>
+			<ul>
+				<li><a href="index.html">Main</a></li> 
+				<li><a href="myth.html">Mythology</a></li>
+				<li><a href="history.html">History</a></li>
+				<li><a href="people.html">Famous People</a></li>
+				<li><a href="art.html">Art</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+			
+		<main>
+			<h1>Ancient Greece - The Birthplace of Western Civilization</h1>
+
+			<script>
+			var randomImage = new Array("Images/painting1.jpg", "Images/painting2.jpg", "Images/painting3.jpg", "Images/painting5.jpg","Images/painting6.jpg","Images/painting7.jpg","Images/painting8.jpg",);
+			
+			function getRandomImage() { 
+				var number = Math.floor(Math.random()*randomImage.length);
+				document.write('<img src="'+randomImage[number]+'" width=30%/>');
+			}
+			getRandomImage()
+			
+			</script>
+			<p>The Greeks made major contributions to math and science. We owe our basic ideas about geometry and the concept of mathematical proofs to ancient Greek mathematicians such as Pythagoras, Euclid, and Archimedes. Some of the first astronomical models were developed by Ancient Greeks trying to describe planetary movement, the Earth's axis, and the heliocentric system, a model that places the Sun at the center of the solar system. Hippocrates, another ancient Greek, is the most famous physician in antiquity. He established a medical school, wrote many medical treatises, and is, because of his systematic and empirical investigation of diseases and remedies, credited with being the founder of modern medicine. The Hippocratic oath, a medical standard for doctors, is named after him.</P>	
+			<P>This webpage will be about classical Greek mythology, storytelling, and history. It will include information 
+			on the authors of these tales, the stories themselves, and the context in which they were written. I will convey 
+			this information by providing quotes from the referenced material, photographs of surviving Greek art and historical 
+			figures, as well modern interpretations of these stories.
+			</P>
+			
+
+			
+		</main>
+		
+		
+		<footer>Created for educational purposes. All information and images taken from Wikipedia and Google. Please don't sue!</footer>
+		</div>
+	</body>
+</html>

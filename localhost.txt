@@ -1,0 +1,11 @@
+// Change directory to D drive
+d:
+
+//change directory to HTML root (D:\Web Development\Personal Site)
+cd: D:\Web Development\Personal Site
+
+// create local server
+py -m http.server
+
+// access local host
+http://localhost:8000/

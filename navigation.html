@@ -1,0 +1,24 @@
+<head></head>
+<body>
+<link rel="stylesheet" href="css\style.css">
+<title>Living on the Dole</title>
+</head>
+<body>
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact Me</a>
+
+
+
+  <script>
+    function replaceContent(target) {
+      $.get(target + ".html", function(data){
+          $("#content").replaceWith(data)});
+      }
+  </script>
+    
+
+</div>
+</body>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css\style.css">
+<link rel="stylesheet" href="css\jquery-ui-edited.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+<title>Living on the Dole</title>
+</head>
+<body>
+
+<!--Navigation bar-->
+<div id="navigation"></div>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+    $.get("navigation.html", function(data){
+        $("#navigation").replaceWith(data);
+    });
+</script> 
+<!--end of Navigation bar-->
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+
+$(function() {
+    $( "#accordion_js" ).accordion({
+      collapsible: true,
+      active: false
+    })
+  });
+
+  $(function() {
+    $( "#accordion_react" ).accordion({
+      collapsible: true,
+      active: false
+    })
+  });
+
+$(function() {
+$( "#accordion_web" ).accordion({
+    collapsible: true,
+    active: false
+    })
+});
+
+$(function() {
+    $( "#accordion_cs" ).accordion({
+      collapsible: true,
+      active: false
+    })
+});
+
+$(function() {
+    $( "#accordion_asp" ).accordion({
+      collapsible: true,
+      active: false
+    })
+});
+
+(function( $, undefined ) {
+
+$.widget( "ab.accordion", $.ui.accordion, {
+
+    refresh: function() {
+
+        this._super( "refresh" );
+
+        if ( this.options.heightStyle !== "content" ) {
+            return;
+        }
+
+        this.headers.next().each( function() {
+
+            if ( $( this ).css( "height" ) ) {
+                $( this ).css( "height", "" );
+            }
+
+        });
+
+    }
+
+});
+
+})(jQuery);
+
+$(function() {
+
+    $( "#accordion_js" ).accordion();
+
+    for ( var i=0; i<20; i++ ){
+        $( "ul" ).append( "<li>nth item</li>" );
+    }
+
+    $( "#accordion_js" ).accordion( "option", "heightStyle", "content" )
+                    .accordion( "refresh" );
+
+});
+
+$(function() {
+
+$( "#accordion_react" ).accordion();
+
+for ( var i=0; i<20; i++ ){
+    $( "ul" ).append( "<li>nth item</li>" );
+}
+
+$( "#accordion_react" ).accordion( "option", "heightStyle", "content" )
+                .accordion( "refresh" );
+
+});
+
+$(function() {
+
+    $( "#accordion_cs" ).accordion();
+
+    for ( var i=0; i<20; i++ ){
+        $( "ul" ).append( "<li>nth item</li>" );
+    }
+
+    $( "#accordion_cs" ).accordion( "option", "heightStyle", "content" )
+                    .accordion( "refresh" );
+
+});
+
+$(function() {
+
+    $( "#accordion_web" ).accordion();
+
+    for ( var i=0; i<20; i++ ){
+        $( "ul" ).append( "<li>nth item</li>" );
+    }
+
+    $( "#accordion_web" ).accordion( "option", "heightStyle", "content" )
+                    .accordion( "refresh" );
+
+});
+
+$(function() {
+
+    $( "#accordion_asp" ).accordion();
+
+    for ( var i=0; i<20; i++ ){
+        $( "ul" ).append( "<li>nth item</li>" );
+    }
+
+    $( "#accordion_asp" ).accordion( "option", "heightStyle", "content" )
+                    .accordion( "refresh" );
+
+});
+
+</script>
+
+<div class="content">
+
+    <h3>Javascript</h3>
+    <div id="accordion_js">
+
+            <h3>Poke-a-Teletubby</h3>
+            <div>
+                <p><a href="/projects/javascript/pokeatubby/" target="_blank">Poke A Teletubby</a>: This was the final for my introduction to Javascript class. This is a simple whack a mole style game with a Teletubby theme. I used a couple of tricks to make this one appear more "game-like" such as randomizing the placement of the "moles", randomizing which graphic was used, and randomizing how long the player has to "whack them". As an added bonus, this project contains Teletubby trivia at the bottom of the page. I'm sure this information will pay off should trivia night at the local pub ever include a children's programming question.</p>
+            </div>
+            <h3>Buffalo Wild Wings Carousel</h3>
+            <div>
+                <p><a href="/projects/javascript/bwwjcarousel/" target="_blank">Buffalo Wild Wings Menu</a>: Another Javascript class assignment. This assignment was meant to teach us how to use code libraries, in this case JQuery. In this assignment I ended up playing around with carousel feature. Can you tell I was hungry when I designed it?</p>
+            </div>
+     </div>  
+     
+     <h3>React</h3>
+     <div id="accordion_react">
+         <h3>Test</h3>
+         <div>
+             <p><a href="/projects/react/test/" target="_blank">Test</a>: My first attempt at utilizing React.</p>
+         </div>
+     </div>
+
+    <h3>Web Development</h3>
+    <div id="accordion_web">
+        <h3>History of Greece</h3>
+        <div>
+            <p><a href="/projects/webdesign/greekhistory/" target="_blank">History of Greece</a>: A mock educational site created for my introduction to HTML class. This was originally an iterative project we worked on each week. After each lesson we would add whatever new tricks we had learned. Before this project I had not worked with HTML since the early 2000s and had never worked with a CSS before. My how times change!</p>
+        </div>
+    </div>
+
+    <h3>C#</h3>
+    <div id="accordion_cs">
+        <h3>Rainfall Collector</h3>
+        <div>
+            <p><a href="https://github.com/sdole86/Rainfall-Data-Collector" target="_blank">GitHub</a>: A forms app that reads an external .txt file and outputs mathematical data. The data supplied to us by the professor had 90,000+ rows of data and this application was supposed to read line by line and come up with minimum, maximum, average rainfall as well as disregard "bogus data".</p>
+        </div>
+        <h3>Movie Database</h3>
+        <div>
+            <p><a href="https://github.com/sdole86/Movie-Database" target="_blank">GitHub</a>: A forms app that performs basic CRUD operations against a SQL database. The original SQL database was hosted on AWS and was shared among the class. It was an interesting experience to use this DB as my classmates entered number of improperly formatted entries that my application wasn't initially configured to handle. It was a great lesson on expecting the unexpected in development.</p>
+        </div>
+        <h3>Bank Account Manager</h3>
+        <div>
+            <p><a href="https://github.com/sdole86/Bank-Account-Manager" target="_blank">GitHub</a>: A forms app that stores and calculates user input data for withdrawals and deposits.</p>
+        </div>
+        <h3>Monthly Payment Calculator</h3>
+        <div>
+            <p><a href="https://github.com/sdole86/Monthly-Payment-Calculator" target="_blank">GitHub</a>: A forms app that takes purchase price, down payment amount, annual interest rate, and loan terms in months to calculate the amount require to finance and monthly payments.</p>
+        </div>
+        <h3>Code Translator</h3>
+        <div>
+            <p><a href="https://github.com/sdole86/Code-Translator" target="_blank">GitHub</a>: A forms app that takes a user inputted "cipher" and either encrypts or decrypts a message. This project utilizes a modified Playfair-style Cipher which is a type of substitution cipher that can not handle numbers or special characters. This cipher utilizes a 5x5 table of which only 25 characters are loaded, which is accomplished using a 2D array.</p>
+        </div>
+        <h3>Leibniz Pi Calculator</h3>
+        <div>
+            <p><a href="https://github.com/sdole86/Pi-Calculator" target="_blank">GitHub</a>: A console app for using Leibniz's Pi formula to calculate pi to excessive amounts of iteration. This was a challenge meant to teach looping skills.</p>
+        </div>
+        <h3>Heart Rate and BMI Calculator</h3>
+        <div>
+            <p><a href="https://github.com/sdole86/BMI-Heart-Rate-Calculator" target="_blank">GitHub</a>: An early C# console application of mine. This app will take the user's weight, height, and age and will calculate what the overall BMI is (Obese / Overweight / Normal / Under) and what your resting heart rate would be at various intensities.</p>
+        </div>
+        <h3>Flooring Cost Estimator</h3>
+        <div>
+            <p><a href="https://github.com/sdole86/Flooring-Cost-Estimator" target="_blank">GitHub</a>: One of the first C# console apps I ever wrote. This was a simple assignment that asked us to take user input (width of floor, length of floor, and cost per square foot) and calculate how long the job would take to complete and what the final cost would be including labor and materials and format it appropriately.</p>
+        </div>
+    </div>
+
+    <h3>ASP.NET Core</h3>
+    <div id="accordion_asp">
+        <h3>Contact Manager</h3>
+        <div>
+            <p><a href="https://github.com/sdole86/ContactManager" target="_blank">GitHub</a>: A test of basic CRUD capabilities using ASP.Net Core and a local SQL DB. This project takes the form of an address book and allows for creation, update, deletion, and editing of existing entries as well as basic filtering.</p>
+        </div>
+        <h3>Student Database</h3>
+        <div>
+            <p><a href="https://github.com/sdole86/Student-Database" target="_blank">GitHub</a>: A test of basic CRUD capabilities using ASP.Net Core and a local SQL DB. This project takes the form of student database. The focus on this one was to set up a trigger in the SQL DB to ensure that any data that is deleted is copied over into a history section.</p>
+        </div>
+        <h3>Tip Calculator</h3>
+        <div>
+            <p><a href="https://github.com/sdole86/TipCalculator" target="_blank">GitHub</a>: A straight forward web application that requests the final cost of the user's meal and returns three different possible tip amounts. With this app you have no excuse not to leave a decent tip for your waiter!</p>
+        </div>
+        <h3>Price Quotation App</h3>
+        <div>
+            <p><a href="https://github.com/sdole86/PriceQuotation" target="_blank">GitHub</a>: My first ASP.Net project and my first forray into the wide world of MVC. Pretty simple application that asks the user for total cost and discount amount and returns how much will be discounted and what the final sale price will be sans discount.</p>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<div id="footer"></div>
+<script>
+    $.get("footer.html", function(data){
+        $("#footer").replaceWith(data);
+    });
+</script> 
+<!--footer-->
+
+</body>
+</html>

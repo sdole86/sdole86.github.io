@@ -1,0 +1,220 @@
+body {
+	background-color:light-gray;
+	background-image: url("./Images/marble.jpg");
+}
+
+#wrapper {
+	width:80%;
+	background-color: light-gray;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+header {
+	text-align:center;
+	line-height:6;
+	height:200px;
+}
+
+main {
+	background-color:white;
+	padding: 10px;
+	margin-left:20px;
+	margin-right:200px;
+}
+
+h1{
+	text-align:center
+}
+
+main img {
+	#float:center;
+	}
+
+nav {
+	height:40px;
+	background-color:gray;
+	}
+	
+nav ul {
+	list-style-type:none;
+	}
+
+nav li {
+	padding-right:20px;
+	font-size:20px;
+	padding-top:10px;
+	float:left;
+	display:inline;
+}
+
+nav a {
+	text-decoration:none;
+	color:white;
+}
+
+nav a:hover {
+	color:black;	
+	background-color:white;
+	padding:8px;
+}
+
+main {
+	margin-left:20px;
+	margin-right:20px;
+}	
+
+main img{
+	display: block;
+	  margin-left: auto;
+  margin-right: auto;
+}	
+
+table{
+	  margin-left: auto;
+  margin-right: auto;
+}
+
+table,
+td {
+    border: 1px rounded #333;
+	padding: 10px;
+	border-style: outset;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+	
+footer {font-size:15px;
+	height:20px;
+	background-color:gray;
+	text-align:center;
+	color:white;
+	}
+
+fieldset { 		   
+	   width: 300px;
+	   padding: 10px;
+	   margin-top: 10px;
+	   margin-bottom: 10px;
+	   margin-left:auto;
+	   margin-right:auto;
+	   background-color:white;}
+
+.leftcolumn {
+    width:15%;
+    height:auto;
+    position: absolute;
+	left: 8px;
+	top: 300px;
+ }
+
+.leftcolumn ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: gray;
+}
+
+.leftcolumn li a {
+  display: block;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.leftcolumn li a:hover {
+  background-color: white;
+  color: black;
+}
+
+@media only screen and (max-width: 1024px) {
+    body{
+		margin: 0;
+		}
+    #wrapper{
+		width: auto;
+		}
+    main {
+		margin-left: 10px;
+		margin-right:0;
+		}
+	header {
+		height:auto; 
+		line-height: auto;
+		}
+	header img {
+		float:none;
+		}
+	main img {
+		float:none;
+		}
+	section img{
+		float:none;
+		}
+	.leftcolumn {
+		display: none;
+		}
+	form {
+		font-size: 150%;
+		}
+    nav { 
+		width: auto; height: auto;
+	}
+    nav li {
+		float: none;
+		display: inline-block; 
+		padding: 0.5em;
+		}
+    nav ul {
+		text-align: center;
+		}
+    nav a {
+		border-style: none;
+		}
+    h1 {
+		font-size: 150%;
+		}
+	p {
+		font-size: 90%;
+		} 
+	footer{
+		padding: 2px;	
+		}
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+		font-size: 120%;
+		}
+    p {
+		font-size: 90%;
+		}
+	.leftcolumn {
+		display: none;
+		}
+	form {
+		font-size: 120%;
+		}
+	img {
+		display: none; float:none;
+		}
+    nav, nav ul, nav li {
+		padding: 0;
+		}
+    nav li {
+		display: block;
+		}
+    nav a {
+		display: block; 
+		padding: 0.3em 0; 
+		border-bottom: 2px ridge #00005d;
+		}
+	footer{
+		padding: 2px;	
+		}
+}

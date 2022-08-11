@@ -1,0 +1,103 @@
+/* CSS Document */
+
+html, body {
+	
+	margin: 0 auto;
+	font-family: sans-serif;
+	font-size: 13px;
+	color: #333;
+	background-color: #336699;
+    background-image: url(../img/rollinghills.jpg);
+	background-size: cover;
+	
+	}
+h1 {
+	margin: 2px;}
+	
+button {
+	font-size: 12px;
+	font-weight: bold;
+	padding: 8px; }
+	
+div#content {
+    width: 700px;
+    margin:0 auto;
+	padding: 20px;
+	background-color: white ; }
+	
+div#controls {
+	text-align: right; }
+	
+div#controls span {
+	font-weight: bold;
+	color: #990000; }
+	
+div#controls button {
+	margin-left: 20px; }
+	
+
+	
+div#gamespace {
+	margin: 20px;
+	padding: 10px;
+	height: 350px;
+	background-color: #FFF;
+	border: 2px solid #CCC; 
+	background-image: url(../img/babysun.jpg);
+	background-size: cover;
+	position: relative; }
+	
+#gamespace:hover {
+	cursor: url(../img/cursor3.png), auto;}
+	
+div#gamespace img { 
+	position: absolute; }
+	
+#accordion{
+	//display:none;
+	margin: 0;
+  padding: 20px;
+	background-color: #FFF;
+}
+	#accordion .ui-accordion-content {
+  width: 100%;
+  background-color: #f3f3f3;
+  color: #777;
+  font-size: 10pt;
+  line-height: 16pt;
+}
+	
+	#accordion .ui-accordion-header {
+  background-color: #ccc;
+  margin: 0px;
+}
+
+#accordion .ui-accordion-header a {
+  color: #fff;
+  line-height: 42px;
+  display: block;
+  font-size: 12pt;
+  width: 100%;
+  text-indent: 10px;
+}
+
+#accordion .ui-accordion-header:first-of-type {
+  background-color: #9999ff;
+
+}
+
+#accordion .ui-accordion-header:nth-of-type(2) {
+  background-color: #66ff66;
+}
+#accordion .ui-accordion-header:nth-of-type(3) {
+  background-color: #ffff99;
+}
+#accordion .ui-accordion-header:nth-of-type(4) {
+  background-color: #ff6666;
+}
+	
+.timer {
+	display: none;
+	font-weight: bold;
+}
+

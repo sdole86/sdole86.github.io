@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styling -->
+    <link rel="stylesheet" href="../css/test.css" />
+    <!-- Google font: Open sans -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <title>
+      Responsive navigation menu example
+    </title>
+  </head>
+  <body>
+    <div id="ham-button" class="hamburger-button" onclick="hamburgerMenu()">
+      <i id="ham-icon" class="fas fa-bars"></i>
+    </div>
+
+    <div id="ham-menu" class="hamburger-menu">
+      <ul>
+        <li>
+          <a href="#navigation"><div onclick="hamburgerMenu()">Home</div></a>
+        </li>
+        <li>
+          <a href="#about"><div onclick="hamburgerMenu()">About</div></a>
+        </li>
+        <li>
+          <a href="#projects"><div onclick="hamburgerMenu()">Projects</div></a>
+        </li>
+        <li>
+          <a href="#blog"><div onclick="hamburgerMenu()">Blogs</div></a>
+        </li>
+        <li>
+          <a href="#footer"><div onclick="hamburgerMenu()">Contact</div></a>
+        </li>
+      </ul>
+    </div>
+    <!-- Navigation bar -->
+    <section id="navigation">
+      <div class="container-dark">
+        <nav class="navigation-bar">
+          <ul>
+            <li><a href="#navigation">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blogs</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!-- Home -->
+    <section id="home">
+      <div class="container-dark">
+        <div class="container-home">Home</div>
+      </div>
+    </section>
+    <!-- About -->
+    <section id="about">
+      <div class="container-light">
+        <div class="container-about">About</div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container-dark">
+        <div class="container-projects">Projects</div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="container-light">
+        <div class="container-skills">Skills</div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section id="timeline">
+      <div class="container-dark">
+        <div class="container-timeline">Timeline</div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog">
+      <div class="container-light">
+        <div class="container-blog">Blog</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+      <footer>
+        <div class="container-dark">
+          <div class="container-footer">
+            <div class="footer-icon-list">
+              <i class="fab fa-twitter footer-icon"></i>
+              <i class="fab fa-linkedin footer-icon"></i>
+              <i class="fab fa-github footer-icon"></i>
+              <i class="fab fa-dev footer-icon"></i>
+              <i class="fab fa-instagram footer-icon"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <script type="text/javascript" src="../js/hamburger.js"></script>
+  </body>
+</html>

@@ -1,0 +1,207 @@
+<!-- 
+		Name: Samuel Dole
+		Date: 11/22/21
+		Class: CSCI2447, Javascript Fundamentals
+		Project 6
+ -->
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+	 <script src="./js/jquery-3.3.1.min.js"></script>
+	 <script src="./js/jquery-ui.js"></script>
+	 <script>
+	 //global variable declaration
+	 let firstName, xValue, yValue;
+	 let score = 0;
+	 let time = 30;
+	 var idCount = 0;
+	 var t;
+	 var imagesArray = ["img/dipsy.png", "img/laalaa.png", "img/po.png", "img/tinky.png"];
+	 var num;
+	 
+	 //begin game
+	 function beginGame() {
+		 decreaseTime();
+		 addImage();
+	 }	
+	 
+	 //decrease time and display results at 0
+	 function decreaseTime() {
+		 time--;
+		 $(".timer").html(time + " seconds remain!");
+		 if (time == 0) {
+			 clearTimeout(t);
+			 var images = document.getElementsByTagName('img');
+			 for (i = 0; i < images.length;i++ ) {
+				 images[i].style.display = "none";
+			 }
+			 $("button#start_button").show();						
+			 alert("Your score was: " + score);				
+			 }
+		 if (time > 0 ){
+			 t= setTimeout("decreaseTime()", 1000);
+		 }
+	 }
+	 
+	 //increase score
+	 function increaseScore() {
+		 score++;
+		 document.getElementById("score").textContent=(score + " pts");
+		 
+		 console.log("The player's score is " + score);
+	 }
+	 
+	 //randomly adds image to gamespace
+	 function addImage() {
+		 //randomize selected image
+		 num = Math.floor(Math.random() * 4)
+ 
+		 var xPost = getRandomX();
+		 var yPost = getRandomY();
+		 var img = $('<img />', { 
+				 id: idCount,
+				 src: imagesArray[num],
+				 alt: 'teletubby',
+				 left: xPost + 'px',
+				 top: yPost + 'px'
+			 });
+			 
+		 //adds newly created image to gamespace
+		 $("#gamespace").append("<img id='" + idCount + "' src='" + imagesArray[num] + "' alt: 'teletubby' style=' left: " + xPost + "px; top: " + yPost + "px' />");
+		 
+		 //call function to remove images at random intervals based on image ID
+		 imageTimeOut(idCount);
+		 idCount++;
+		 
+		 //repeatedly call add image function until the time hits zero
+		 if (time > 0 ){
+			 t= setTimeout("addImage()", (Math.floor(Math.random() * 2000)));
+		 }
+		 
+	 }
+	 
+	 //sets randomly generated time out threshold for created images
+	 function imageTimeOut(id){
+		 setTimeout(function(){
+			 document.getElementById(id).remove();},
+			 Math.floor(Math.random() * 5000));
+	 }
+ 
+	 
+	 //JQueryUI script for accordion info
+	 $( function() {
+		 $( "#accordion" ).accordion();
+	 } );
+	 
+	 //ready function
+	 $(document).ready(function() {
+		 //set gameboard
+		 $(".timer").css("display", "inline");
+		 $(".accordion").css("display", "inline");
+		 
+		 $("button#start_button").css({"font-size":"18px","background-color":"blue","color":"white", "height":"60px","width":"180px"});
+	 
+		 //request user info
+		 firstName = prompt('What is your first name?','')
+		 console.log("The player's first name is " + firstName);
+		 alert("Are you read to poke a Teletubby, " + firstName + "?")
+		 
+		 
+		 //random value test
+		 xValue = getRandomX();
+		 yValue = getRandomY();
+		 console.log("The X, Y coordinators are " + xValue + ", " + yValue);
+		 
+		 //start button functionality		
+		 $("button#start_button").click(function(){
+			 score = 0;
+			 time = 30;
+			 document.getElementById("score").textContent=(score + " pts");
+			 $(".timer").html(time + " seconds remain!");
+ 
+			 beginGame();
+			 $(this).hide();
+		 });
+		 
+		 //clicking appending image increases score and hides the image
+		 $(document).on('click','img',function(){
+			 increaseScore();
+			 $(this).hide();   
+		 
+		 });
+		 
+	 })
+		 
+		 //functions to generate random numbers
+		 function getRandomX() {
+			 return Math.floor(Math.random() * 550);
+		 }
+		 function getRandomY() {
+			 return Math.floor(Math.random() * 200);
+	 }
+	 $("p").hover(function(){
+   $(this).css("background-color", "yellow");
+   }, function(){
+   $(this).css("background-color", "pink");
+ });
+ 
+	 </script>
+	 <title>Poke-A-Teletubby (CSCI2447)</title>
+ 
+	 <!-- CSS styles: This is for me to worry about; not you. -->
+	 <link href="css/game.css" rel="stylesheet" />
+ 
+	 <link rel="shortcut icon" href="img/favicon.png" />
+ </head>
+   <body>
+ 
+	 <div id="content">
+ 
+		 <h1>Poke-A-Teletubby</h1>
+		 
+		 <p>After clicking "start", you will have 30 seconds to click
+		 as many images as you can. The images appear randomly so be ready! </p>
+		 
+		 <div id="controls">
+			 <span id="score">0 pts</span>
+			 <button type="button" id="start_button">Start!</button>
+		 </div>
+		 
+		 
+		 <div class="timer">
+		 30 seconds left
+		 </div>
+		 <div id="gamespace">
+			 
+		 </div>
+		 Poke each Teletubby's name listed below to find out more about them!
+		 <div id="accordion">
+		   <h3>Tinky Winky</h3>
+		   <div>
+			 <p>
+			 Tinky Winky (played by Dave Thompson and Simon Shelton in the original series and by Jeremiah Krage in the revival series) is the first Teletubby, as well as the largest and oldest of the group. He is covered in purple terrycloth and has a triangular antenna on his head. He often carries a red bag. Not only is Tinky Winky the biggest Teletubby. He is also very kind and gentle. Tinky Winky loves walking, marching, dancing and falling over. He has a special song which he loves to sing to himself. Tinky Winky loves very big hugs.
+			 </p>
+		   </div>
+		   <h3>Dipsy</h3>
+		   <div>
+			 <p>
+			 Dipsy (played by John Simmit in the original series and by Nick Kellington in the revival series) is the second Teletubby. He is green and named after his antenna, which resembles a dipstick. Dipsy is the most stubborn of the Teletubbies, and will occasionally refuse to go along with the others' group opinion. His face is notably darker than the rest of the Teletubbies, and the creators have stated that he is black. He often wears a large hat with a black and white pattern.
+			 </p>
+		   </div>
+		   <h3>Laa-Laa</h3>
+		   <div>
+			 <p>
+			 Laa-Laa (played by Nikky Smedley in the original series and by Rebecca Hyland in the revival series) is the third Teletubby. She is yellow and has a curly antenna. Laa-Laa is very sweet, likes to sing and dance, and is often shown looking out for the other Teletubbies. Her favourite toy is an orange rubber ball.
+			 </p>
+		   </div>
+		   <h3>Po</h3>
+		   <div>
+			 <p>
+			 Po (played by Pui Fan Lee in the original series and by Rachelle Beinart in the revival series) is the fourth Teletubby, as well as the shortest and youngest. She is red and has an antenna shaped like a stick used for blowing soap bubbles. Po normally speaks in a soft voice and has been stated by the show's creators to be Cantonese; she sometimes speaks the language. Her favourite toy is a pink and blue scooter.
+			 </p>
+			 </div>
+		 
+		 </div>
+   </body>
+ </html>
