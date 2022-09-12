@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="css\style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-<title>Living on the Dole</title>
-</head>
-<body>
+    <head>
+    <link rel="stylesheet" href=".\css\style.css">
+    <title>Living on the Dole</title>
+    </head>
+    <body>
 
-<!--Navigation bar-->
-<div id="navigation"></div>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script>
-    $.get("navigation.html", function(data){
-        $("#navigation").replaceWith(data);
-    });
-</script> 
-<!--end of Navigation bar-->
+        <!--Navigation bar-->
+        <div id="navigation"></div>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $.get("navigation.html", function(data){
+                $("#navigation").replaceWith(data);
+            });
+        </script> 
+        <!--end of Navigation bar-->
 
-<div class="content">
-<p>My name is Samuel Dole and I am an aspiring web designer and software developer. I have been fascinated with coding ever since I discovered RPG Maker 2003 decades ago. It was a simple engine but it gave me my first taste of development. I would spend hours in middle school crafting project after project, always happily starting over and starting a new one as new ideas and techniques came to mind. As I got older I pursued my other passion: history. My original bachelor's was in the history of the ancient world, specifically Greece and Rome, and I had a wonderful time studying and learning all I could about the ancient world. </p>
-<p>When I graduated and entered the work force I had forgotten about my love of code until I was offered the opportunity to work in IT doing basic desktop support. I had always had a passion for technology and this was a great chance to use this passion to help others. As I took to this job I found a great joy in scripting in PowerShell to make my tasks more efficient. As I learned more and more I eventually began assisting with other, more complicated scripting projects. It wasn't long before I reignited my childhood interest in coding. I went back to school and began to educate myself in development in earnest. I've tried my hand at Java, Javascript, C#, PHP, and Python. I've found that I'm always excited to learn more and to better myself.</p>
-</div>
+        <div class="content">
+            <div class="about">
+                <div id="my-photo">
+                    <img src="./img/me.jpg">
+                </div>
+                <div id="about-me">
+                    <p>My name is Samuel Dole and I am an aspiring web designer and software developer. I have been fascinated with coding ever since I discovered RPG Maker 2003 decades ago. It was a simple engine but it gave me my first taste of development. I would spend hours in middle school crafting project after project, always happily starting over and starting a new one as new ideas and techniques came to mind. As I got older I pursued my other passion: history. My original bachelor's was in the history of the ancient world, specifically Greece and Rome, and I had a wonderful time studying and learning all I could about the ancient world. </p>
+                    <p>When I graduated and entered the work force I had forgotten about my love of code until I was offered the opportunity to work in IT doing basic desktop support. I had always had a passion for technology and this was a great chance to use this passion to help others. As I took to this job I found a great joy in scripting in PowerShell to make my tasks more efficient. As I learned more and more I eventually began assisting with other, more complicated scripting projects. It wasn't long before I reignited my childhood interest in coding. I went back to school and began to educate myself in development in earnest. I've tried my hand at Java, Javascript, C#, PHP, and Python. I've found that I'm always excited to learn more and to better myself.</p>
+                </div>
+            </div>
+        </div>
 
-<!--footer-->
-<div id="footer"></div>
-<script>
-    $.get("footer.html", function(data){
-        $("#footer").replaceWith(data);
-    });
-</script> 
-<!--footer-->
+        <!--footer-->
+        <div id="footer"></div>
+        <script>
+            $.get("footer.html", function(data){
+                $("#footer").replaceWith(data);
+            });
+        </script> 
+        <!--footer-->
 
-</body>
+    </body>
 </html>

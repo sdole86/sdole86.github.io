@@ -25,20 +25,8 @@ html {
     margin: 0;
     padding: 0;
   }
-  
-  .container-dark {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-  
-  .container-light {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    background-color: whitesmoke;
-  }
-  
+ 
+ 
   /* Hamburger button */
   
   .hamburger-button {

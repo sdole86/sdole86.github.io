@@ -1,7 +1,15 @@
 body {
-  background-color: #B6D5E1;
-  color: #11111;
+  color: #385E6E;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #E8F8FF;
+
 }
+
 
 h1 {
   position: sticky;
@@ -15,62 +23,107 @@ p {
   margin: 50px;
 }
 
-.content {
-  padding: 10px;
-  margin-left: 20%;
-  margin-right: 20%;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.logo {
-  display: block;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 10%;
-  margin-bottom: 10%;
-}
-
-
-/* Navigation bar */
-.topnav {
-  background-color: #565475;
-  overflow: hidden;
-  position: sticky;
-  margin-left: 10%;
-  margin-right: 10%;
-  border-radius: 25px;
+#navigation-bar{
+   background-color: #565475;
+   position: sticky;
+   top: 0;
+   color: #E8F8FF;
+   text-align: center;
+   padding: 14px 16px;
 
 }
 
-/* Navigation bar link style */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
+#navigation-bar a{
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+
 }
 
-/* Navigation bar color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+#navigation-bar a:visited, a:link{
+  color:#E8F8FF;
 }
 
-/* Navigation bar color of active link */
-.topnav a.active {
-  background-color: #9EBACC;
-  color: #565475;
+#navigation-bar a:hover {
+  background-color: #A19FC2;
+  color: #242242;
 }
 
-/* footer */
+#main, #projects {
+  background-color: #B6D4E0;
+
+}
+
+#about-me, #contact-me{
+  background-color: #C0E0ED;
+}
+
 .footer {  
   bottom: 10px;    
   background-color: #565475;  
   color: white;  
-  text-align: center;  
+  text-align: left;  
   margin-left: 10%;
   margin-right: 10%;
   border-radius: 25px;
 }
+
+/* Mobile lay out */
+
+@media (min-width: 600px){
+
+  #navigation-bar {
+    display: visible;
+    font-size: 22px;
+    width: 100%;
+  }
+
+  #navigation-bar a{
+    display: visible;
+
+  }
+
+
+}
+
+/* Desktop layout */
+
+@media (min-width: 1024px){
+
+  #navigation-bar {
+    display: visible;
+    font-size: 17px;
+    width: 100%;
+  }
+
+  #main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #projects {
+    
+  }
+
+  #icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+  }
+
+  #icons img{
+    max-width: 200px;
+    border-radius: 50px;
+    padding-bottom: 15px;
+  }
+
+  .content {
+    border-radius: 10px;
+    width: 1024px;
+    margin: 5px 0px 0px 5px;
+  }
+
+
+}
+

@@ -1,34 +1,125 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="css\style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+<link rel="stylesheet" href=".\css\style.css">
 <title>Living on the Dole</title>
 </head>
 <body>
 
-<!--Navigation bar-->
-<div id="navigation"></div>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script>
-    $.get("navigation.html", function(data){
-        $("#navigation").replaceWith(data);
-    });
-</script> 
-<!--end of Navigation bar-->
+    <div id="navigation-bar">
+        <a href="#main">Main</a>
+        <a href="#about-me">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact-me">Contact Me</a>
+    </div>
 
+    <div class="content" id="main">
+        <img src="./img/logo.png">
+    </div>
 
-<div class="content">
-<img src="img/logo.png" class="logo"></img>
-</div>
+    <div class="content" id="about-me">
+        
+        <p>Hello, my name is Samuel Dole and I am an aspiring web designer and software developer. I have been fascinated with coding ever since I discovered RPG Maker 2003 decades ago. It was a simple engine but it gave me my first taste of development. I would spend hours in middle school crafting project after project, always happily starting over and starting a new one as new ideas and techniques came to mind. As I got older I pursued my other passion: history. My original bachelor's was in the history of the ancient world, specifically Greece and Rome, and I had a wonderful time studying and learning all I could about the ancient world. </p>
+        <p>When I graduated and entered the work force I had forgotten about my love of code until I was offered the opportunity to work in IT doing basic desktop support. I had always had a passion for technology and this was a great chance to use this passion to help others. As I took to this job I found a great joy in scripting in PowerShell to make my tasks more efficient. As I learned more and more I eventually began assisting with other, more complicated scripting projects. It wasn't long before I reignited my childhood interest in coding. I went back to school and began to educate myself in development in earnest. I've tried my hand at Java, Javascript, C#, PHP, and Python. I've found that I'm always excited to learn more and to better myself.</p>
+    </div>
 
-<!--footer-->
-<div id="footer"></div>
-<script>
-    $.get("footer.html", function(data){
-        $("#footer").replaceWith(data);
-    });
-</script> 
-<!--footer-->
+    <div class="content" id="projects">
+        <P>Click below to see the types of projects I have completed in the past.</P>
+        <h3>ASP.NET Core</h3>
+        <div id="accordion_asp">
+            <h3>Contact Manager</h3>
+            <div>
+                <p><a href="https://github.com/sdole86/ContactManager" target="_blank">GitHub</a>: A test of basic CRUD capabilities using ASP.Net Core and a local SQL DB. This project takes the form of an address book and allows for creation, update, deletion, and editing of existing entries as well as basic filtering.</p>
+            </div>
+            <h3>Student Database</h3>
+            <div>
+                <p><a href="https://github.com/sdole86/Student-Database" target="_blank">GitHub</a>: A test of basic CRUD capabilities using ASP.Net Core and a local SQL DB. This project takes the form of student database. The focus on this one was to set up a trigger in the SQL DB to ensure that any data that is deleted is copied over into a history section.</p>
+            </div>
+            <h3>Tip Calculator</h3>
+            <div>
+                <p><a href="https://github.com/sdole86/TipCalculator" target="_blank">GitHub</a>: A straight forward web application that requests the final cost of the user's meal and returns three different possible tip amounts. With this app you have no excuse not to leave a decent tip for your waiter!</p>
+            </div>
+            <h3>Price Quotation App</h3>
+            <div>
+                <p><a href="https://github.com/sdole86/PriceQuotation" target="_blank">GitHub</a>: My first ASP.Net project and my first forray into the wide world of MVC. Pretty simple application that asks the user for total cost and discount amount and returns how much will be discounted and what the final sale price will be sans discount.</p>
+            </div>
+        </div>
+
+    <h3>Web Development</h3>
+    <div id="accordion_web">
+        <h3>History of Greece</h3>
+        <div>
+            <p><a href="/projects/webdesign/greekhistory/" target="_blank">Link</a>: A mock educational site created for my introduction to HTML class. This was originally an iterative project we worked on each week. After each lesson we would add whatever new tricks we had learned. Before this project I had not worked with HTML since the early 2000s and had never worked with a CSS before. My how times change!</p>
+        </div>
+    </div>
+
+    <h3>C#</h3>
+    <div id="accordion_cs">
+        <h3>Rainfall Collector</h3>
+        <div>
+            <p><a href="https://github.com/sdole86/Rainfall-Data-Collector" target="_blank">GitHub</a>: A forms app that reads an external .txt file and outputs mathematical data. The data supplied to us by the professor had 90,000+ rows of data and this application was supposed to read line by line and come up with minimum, maximum, average rainfall as well as disregard "bogus data".</p>
+        </div>
+        <h3>Movie Database</h3>
+        <div>
+            <p><a href="https://github.com/sdole86/Movie-Database" target="_blank">GitHub</a>: A forms app that performs basic CRUD operations against a SQL database. The original SQL database was hosted on AWS and was shared among the class. It was an interesting experience to use this DB as my classmates entered number of improperly formatted entries that my application wasn't initially configured to handle. It was a great lesson on expecting the unexpected in development.</p>
+        </div>
+        <h3>Bank Account Manager</h3>
+        <div>
+            <p><a href="https://github.com/sdole86/Bank-Account-Manager" target="_blank">GitHub</a>: A forms app that stores and calculates user input data for withdrawals and deposits.</p>
+        </div>
+        <h3>Monthly Payment Calculator</h3>
+        <div>
+            <p><a href="https://github.com/sdole86/Monthly-Payment-Calculator" target="_blank">GitHub</a>: A forms app that takes purchase price, down payment amount, annual interest rate, and loan terms in months to calculate the amount require to finance and monthly payments.</p>
+        </div>
+        <h3>Code Translator</h3>
+        <div>
+            <p><a href="https://github.com/sdole86/Code-Translator" target="_blank">LiGitHubnk</a>: A forms app that takes a user inputted "cipher" and either encrypts or decrypts a message. This project utilizes a modified Playfair-style Cipher which is a type of substitution cipher that can not handle numbers or special characters. This cipher utilizes a 5x5 table of which only 25 characters are loaded, which is accomplished using a 2D array.</p>
+        </div>
+        <h3>Leibniz Pi Calculator</h3>
+        <div>
+            <p><a href="https://github.com/sdole86/Pi-Calculator" target="_blank">GitHub</a>: A console app for using Leibniz's Pi formula to calculate pi to excessive amounts of iteration. This was a challenge meant to teach looping skills.</p>
+        </div>
+        <h3>Heart Rate and BMI Calculator</h3>
+        <div>
+            <p><a href="https://github.com/sdole86/BMI-Heart-Rate-Calculator" target="_blank">GitHub</a>: An early C# console application of mine. This app will take the user's weight, height, and age and will calculate what the overall BMI is (Obese / Overweight / Normal / Under) and what your resting heart rate would be at various intensities.</p>
+        </div>
+        <h3>Flooring Cost Estimator</h3>
+        <div>
+            <p><a href="https://github.com/sdole86/Flooring-Cost-Estimator" target="_blank">GitHub</a>: One of the first C# console apps I ever wrote. This was a simple assignment that asked us to take user input (width of floor, length of floor, and cost per square foot) and calculate how long the job would take to complete and what the final cost would be including labor and materials and format it appropriately.</p>
+        </div>
+    </div>
+
+    <h3>Python</h3>
+    <div id="accordion_python">
+        <h3>Snake</h3>
+        <div>
+            <p><a href="https://github.com/sdole86/Snake" target="_blank">GitHub</a>: This one was built off a tutorial from Edureka to create a simple Snake-like game in Python. After finishing the tutorial I decided to implement some of my own customizations to the code including increasing difficulty as the player gains points as well as adding some additional classes to the code to make it more readable.</p>
+        </div>
+        <h3>Inspirational Quote Generator</h3>
+        <div>
+            <p><a href="https://github.com/sdole86/InspirationGenerator" target="_blank">GitHub</a>:Another assignment from my coworker's Python class. This project calls a function that randomly selects a predefined quote and displays it to the user. Afterwards the user can specify if they want another quote or to quit the application.</p>
+        </div>
+        <h3>Module Operator</h3>
+        <div>
+            <p><a href="https://github.com/sdole86/ModuleOperator" target="_blank">GitHub</a>: A coworker of mine started a Python course. In my journey to learn Python I asked him to share his lessons with me to see if I can figure them out despite having no formal experience with the language. This particular assignment was to understand how the module operator works. This code requests two numerical inputs from the user that set up a range. It then iterate through the range to check if that particular number is divisible by 3, 5, or both.</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="content" id="contact-me">
+        <h3>Contact Me</h3>
+        <P>If you would like to know more about me, please reach out to me either through LinkedIn or my personal email. I'm always eager to hear about new opportunities or speak with like minded individuals.</P>
+        <p>Please visit my GitHub page to see what I'm currently working on</p>
+        <div id="icons">
+            <a href="https://www.linkedin.com/in/samuel-dole-b3453814/"><img src="./img/linkedin_icon.png"></a>
+            <a href="https://github.com/sdole86"><img src="./img/github_icon.png"></a>
+            <a href="mailto: sdole86@gmail.com"><img src="./img/email_icon.png"></a>
+        </div>
+    </div>
+
+    <footer>
+        Created by Samuel Dole | 2022 - All Right Reserved
+    </footer>
+
 </body>
 </html>
