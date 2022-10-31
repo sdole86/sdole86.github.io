@@ -23,7 +23,7 @@ h1 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 16px;
   margin: 50px;
 }
 
@@ -80,6 +80,10 @@ p {
 
 #osu-syspec, #equifax, #gamestop{
   border: 2px solid black;
+}
+
+#gamestop{
+  margin-bottom: 15px;
 }
 
 .footer {  
