@@ -24,7 +24,8 @@ h1 {
 
 p {
   font-size: 16px;
-  margin: 15px;
+  margin: 15px ;
+  padding: 0 15px 0px 15px;
 }
 
 #navigation-bar{
@@ -70,6 +71,9 @@ p {
   background-color: whitesmoke;
 }
 
+#project-type-selection{
+  margin-top: 30px;
+}
 #project-icons img:hover{
   cursor: pointer;
 }
@@ -93,25 +97,38 @@ p {
   align-items: center;
   justify-content: space-evenly;
   align-content: space-between;
-  margin: 0;
   flex-wrap: wrap;
   padding: 10px;
+  gap: 50px;
+  margin-bottom: 20px;
 }
 
 #technologies img {
   width: 100px;
+  padding: 10px;
 }
 
 .technology p {
   padding: 0;
   margin: 0;
+  
+}
+
+.technology img {
+  width: 100px;
+  height: 100px;
 }
 
 .technology {
   display:flex;
   align-items: center;
-  align-self: center;
   flex-direction: column;
+  border:1px solid black;
+  width: 110px;
+  height: 130px;
+  border-radius: 5px;
+  box-shadow: 2px 2px;
+  
 }
 
 #osu-syspec, #equifax, #gamestop{
