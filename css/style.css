@@ -71,6 +71,20 @@ p {
   background-color: whitesmoke;
 }
 
+/* About me */
+
+#about-me{
+  display: flex;
+  flex-direction: row;
+  padding: 20px
+}
+
+#about-me img {
+  height: 300px;
+  border-radius: 5%;
+}
+
+
 /* Projects */
 
 #icons {
@@ -103,8 +117,14 @@ p {
 #project-type-selection{
   margin-top: 30px;
 }
+
+#project-icons img{
+opacity: .5;
+}
+
 #project-icons img:hover{
   cursor: pointer;
+  opacity: 1;
 }
 
 .job-posting{
