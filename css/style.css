@@ -257,13 +257,30 @@ p {
 /* Mobile lay out */
 
 @media (min-width: 600px){
+  body{
+    margin: 0 !important;
+    display:block;
+    background-image: none;
+    width:100%;
+    padding:0;
+  }
+
+  .content{
+    margin: 0 !important;
+    width:100% !important;
+  }
 
   #navigation-bar {
-    font-size: 22px;
+    font-size: 30px;
   }
 
   #navigation-bar a{
     display: visible;
+  }
+
+  #resume{
+    margin: 0;
+    width: 100%;
   }
 
   .icons {
@@ -282,7 +299,7 @@ p {
     margin-top: 5px;
     
   }
-
+  
 
 }
 
