@@ -6,12 +6,23 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(202, 208, 218);
-  background-image: url(/img/bg_future.jpg);
+
+  
+}
+
+body::after {
+  content: "";
+  background-image: url(/img/bg_tech.jpg);
   background-size: cover;
   background-attachment: fixed;
-  background-blend-mode: luminosity;
-  
+  background-repeat:no-repeat;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position:fixed;
+  z-index: -1;   
 }
 
 
@@ -24,12 +35,13 @@ h1 {
 
 p {
   font-size: 16px;
-  margin: 15px ;
+  margin-left: 15px ;
   padding: 0 15px 0px 15px;
+  text-indent: 10%;
 }
 
 #navigation-bar{
-   background-color: #565475;
+   background-color: #3B5469;
    position: sticky;
    top: 0;
    color: #E8F8FF;
@@ -95,6 +107,8 @@ p {
 
 }
 
+
+
 #icons img{
   max-width: 200px;
   border-radius: 50px;
@@ -125,6 +139,11 @@ opacity: .5;
 #project-icons img:hover{
   cursor: pointer;
   opacity: 1;
+  box-shadow: 5px;
+}
+
+.instructions{
+  font-weight: bold;
 }
 
 .job-posting{
@@ -160,7 +179,7 @@ opacity: .5;
 .technology p {
   padding: 0;
   margin: 0;
-  
+
 }
 
 .technology img {
@@ -186,6 +205,35 @@ opacity: .5;
 
 #gamestop{
   margin-bottom: 15px;
+}
+
+/* Credentials */
+
+.education {
+  border:2px solid black;
+  border-radius: 5px;
+  width: 300px;
+  background-color: white;
+  box-shadow: 2px 2px;
+  margin-bottom: 20px;
+ 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+  
+}
+
+.education img {
+  height: 100px;
+  justify-content: center;
+}
+
+#credential-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .footer {  
@@ -259,11 +307,11 @@ opacity: .5;
   bottom: 0px;
   width: 100%;
   text-align: center;
-  background-color: #385E6E;
+  background-color: #3B5469;
 }
 
 .text, a:visited, a:link {
-  color:#E8F8FF;
+  color:lightsteelblue;
 } 
 
 
@@ -305,7 +353,7 @@ opacity: .5;
 
 /* Mobile lay out */
 
-@media (max-width: 375px){
+@media (max-width: 425px){
   body{
     margin: 0 !important;
     display:block;

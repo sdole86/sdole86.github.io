@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href=".\css\style.css">
-<link rel="stylesheet" href=".\css\slideshow.css">
-<script src="/js/jquery-3.6.1.min.js"></script>
-<script src="/js/project.js"></script>
 
-<title>Living on the Dole</title>
+<head>
+    <link rel="stylesheet" href=".\css\style.css">
+    <link rel="stylesheet" href=".\css\slideshow.css">
+    <script src="/js/jquery-3.6.1.min.js"></script>
+    <script src="/js/project.js"></script>
+
+    <title>Living on the Dole</title>
 </head>
+
 <body>
-    
+
     <div id="navigation-bar">
         <a href="#main">Main</a>
         <a href="#about-me">About Me</a>
         <a href="#projects">Projects</a>
         <a href="#technologies">Technologies</a>
         <a href="#resume">Resume</a>
-        <a href="#education">Education</a>
+        <a href="#credentials">Credentials</a>
         <a href="#contact-me">Contact Me</a>
     </div>
 
@@ -26,18 +28,31 @@
 
     <div class="content" id="about-me">
         <div id="introduction-paragraph">
-        <p>Hello, my name is Samuel Dole and I am an aspiring web designer and software developer. I have been fascinated with coding ever since I young when I would attempt to program my own video games. I used a simple game making engine at the time but it gave me my first taste of development. I would spend hours in middle school crafting project after project, always happily starting over and starting a new one as new ideas and techniques came to mind. As I got older I pursued my other passion: history. My original bachelor's was in the history of the ancient world, specifically Greece and Rome, and I had a wonderful time studying and learning all I could about the ancient world. </p>
-        <p>When I graduated and entered the work force I had forgotten about my love of code until I was offered the opportunity to work in IT doing basic desktop support. I had always had a passion for technology and this was a great chance to use this passion to help others. As I took to this job I found a great joy in scripting in PowerShell to make my tasks more efficient. As I learned more and more I eventually began assisting with other, more complicated scripting projects. It wasn't long before I reignited my childhood interest in coding. I went back to school and began to educate myself in development in earnest. I've tried my hand at Java, Javascript, C#, PHP, and Python. I've found that I'm always excited to learn more and to better myself.</p>
+            <p>Hello, my name is Samuel Dole and I am an aspiring web designer and software developer. I have been
+                fascinated with coding ever since I young when I would attempt to program my own video games. I used a
+                simple game making engine at the time but it gave me my first taste of development. I would spend hours
+                in middle school crafting project after project, always happily starting over and starting a new one as
+                new ideas and techniques came to mind. As I got older I pursued my other passion: history. My original
+                bachelor's was in the history of the ancient world, specifically Greece and Rome, and I had a wonderful
+                time studying and learning all I could about the ancient world. </p>
+            <p>When I graduated and entered the work force I had forgotten about my love of code until I was offered the
+                opportunity to work in IT doing basic desktop support. I had always had a passion for technology and
+                this was a great chance to use this passion to help others. As I took to this job I found a great joy in
+                scripting in PowerShell to make my tasks more efficient. As I learned more and more I eventually began
+                assisting with other, more complicated scripting projects. It wasn't long before I reignited my
+                childhood interest in coding. I went back to school and began to educate myself in development in
+                earnest. I've tried my hand at Java, Javascript, C#, PHP, and Python. I've found that I'm always excited
+                to learn more and to better myself.</p>
         </div>
         <div id="introduction-picture-section">
             <img src="img/me.jpg">
         </div>
     </div>
 
-    
+
 
     <div class="content" id="projects">
-        
+
         <div id="project-type-selection">
             <div class="icons" id="project-icons">
                 <img src="./img/projects/aspnet.png" onclick="displayProjectSlideShow('dotnet')">
@@ -48,138 +63,206 @@
             </div>
         </div>
 
-        <P>Select an image to see the various related projects I have completed.</P>
+        <P class="instructions">Select an image from above to see the various related projects I have completed.</P>
 
         <div id="projects">
-                <div class="slideshow-container" id="dotnet">
-                    <h2>DotNet</h2>
-                    <div class="mySlides1">
-                        <img src="./img/projects/asp1.PNG">
-                        <div class="text"><a href="https://github.com/sdole86/ContactManager" target="_blank">Contact Manager</a>: A test of basic CRUD capabilities using ASP.Net Core and a local SQL DB. This project takes the form of an address book and allows for creation, update, deletion, and editing of existing entries as well as basic data filtering</div>
-                    </div>
-        
-                    <div class="mySlides1">
-                        <img src="./img/projects/asp2.PNG">
-                        <div class="text"><a href="https://github.com/sdole86/Student-Database" target="_blank">Student Database</a>:A test of basic CRUD capabilities using ASP.Net Core and a local SQL DB. This project takes the form of student database. The focus on this one was to set up a trigger in the SQL DB to ensure that any data that is deleted is copied over into a history section</div>
-                    </div>
-        
-                    <div class="mySlides1">
-                        <img src="./img/projects/asp3.PNG">
-                        <div class="text"><a href="https://github.com/sdole86/TipCalculator" target="_blank">Tip Calculator</a>: A straight forward web application that requests the final cost of the user's meal and returns three different possible tip amounts. With this app you have no excuse not to leave a decent tip for your waiter!</div>
-                    </div>
-        
-                    <div class="mySlides1">
-                        <img src="./img/projects/asp4.PNG">
-                        <div class="text"><a href="https://github.com/sdole86/PriceQuotation" target="_blank">Price Quotation</a>: My first ASP.Net project and my first forray into the wide world of MVC. Pretty simple application that asks the user for total cost and discount amount and returns how much will be discounted and what the final sale price will be sans discount.</div>
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            <div class="slideshow-container" id="dotnet">
+                <h2>DotNet</h2>
+                <div class="mySlides1">
+                    <img src="./img/projects/asp1.PNG">
+                    <div class="text"><a href="https://github.com/sdole86/ContactManager" target="_blank">Contact
+                            Manager</a>: A test of basic CRUD capabilities using ASP.Net Core and a local SQL DB. This
+                        project takes the form of an address book and allows for creation, update, deletion, and editing
+                        of existing entries as well as basic data filtering</div>
                 </div>
 
-                
-                <div class="slideshow-container" id="cs" style="display:none">
-                    <h2>C#</h2>
-                    <div class="mySlides2">
-                        <img src="./img/projects/cs06.PNG">
-                        <div class="text"><a href="https://github.com/sdole86/Bank-Account-Manager" target="_blank">Bank Account Manager</a>: A forms app that stores and calculates user input data for withdrawals and deposits.</div>
-                    </div>
-
-                    <div class="mySlides2">
-                        <img src="./img/projects/cs08.PNG">
-                        <div class="text"><a href="https://github.com/sdole86/Rainfall-Data-Collector" target="_blank">Rainfall Data Collector</a>: A forms app that reads an external .txt file and outputs mathematical data. The data supplied to us by the professor had 90,000+ rows of data and this application was supposed to read line by line and come up with minimum, maximum, average rainfall from the inserted data.</div>
-                    </div>
-        
-                    <div class="mySlides2">
-                        <img src="./img/projects/cs07.PNG">
-                        <div class="text"><a href="https://github.com/sdole86/Movie-Database" target="_blank">Movie Database</a>: A forms app that performs basic CRUD operations against a SQL database. The original SQL database was hosted on AWS and was shared among the class. It was an interesting experience to use this DB as my classmates entered number of improperly formatted entries that my application wasn't initially configured to handle. It was a great lesson on expecting the unexpected in development</div>
-                    </div>
-                                   
-                    <div class="mySlides2">
-                        <img src="./img/projects/cs05.PNG">
-                        <div class="text"><a href="https://github.com/sdole86/Monthly-Payment-Calculator" target="_blank">Monthly Payment Calculator</a>: A forms app that takes purchase price, down payment amount, annual interest rate, and loan terms in months to calculate the amount require to finance and monthly payments.</div>
-                    </div>
-        
-                    <div class="mySlides2">
-                        <img src="./img/projects/cs04.PNG">
-                        <div class="text"><a href="https://github.com/sdole86/Code-Translator" target="_blank">Code Translator</a>: A forms app that takes a user inputted "cipher" and either encrypts or decrypts a message. This project utilizes a modified Playfair-style Cipher which is a type of substitution cipher that can not handle numbers or special characters. This cipher utilizes a 5x5 table of which only 25 characters are loaded, which is accomplished using a 2D array.</div>
-                    </div>
-        
-                    <div class="mySlides2">
-                        <img src="./img/projects/cs03.PNG">
-                        <div class="text"><a href="https://github.com/sdole86/Pi-Calculator" target="_blank">Leibniz Pi Calculator</a>: A console app for using Leibniz's Pi formula to calculate pi to excessive amounts of iteration. This was a challenge meant to teach looping skills.</div>
-                    </div>
-        
-                    <div class="mySlides2">
-                        <img src="./img/projects/cs02.PNG">
-                        <div class="text"><a href="https://github.com/sdole86/BMI-Heart-Rate-Calculator" target="_blank">BMI Heart Rate Calculator</a>: An early C# console application of mine. This app will take the user's weight, height, and age and will calculate what the overall BMI is (Obese / Overweight / Normal / Under) and what your resting heart rate would be at various intensities.</div>
-                    </div>
-        
-                    <div class="mySlides2">
-                        <img src="./img/projects/cs01.PNG">
-                        <div class="text"><a href="https://github.com/sdole86/Flooring-Cost-Estimator" target="_blank">Floor Cost Estimator</a>: One of the first C# console apps I ever wrote. This was a simple assignment that asked us to take user input (width of floor, length of floor, and cost per square foot) and calculate how long the job would take to complete and what the final cost would be including labor and materials and format it appropriately.</div>
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                <div class="mySlides1">
+                    <img src="./img/projects/asp2.PNG">
+                    <div class="text"><a href="https://github.com/sdole86/Student-Database" target="_blank">Student
+                            Database</a>:A test of basic CRUD capabilities using ASP.Net Core and a local SQL DB. This
+                        project takes the form of student database. The focus on this one was to set up a trigger in the
+                        SQL DB to ensure that any data that is deleted is copied over into a history section</div>
                 </div>
 
-                <div class="slideshow-container" id="web" style="display:none">
-                    <h2>Web Development</h2>
-                    <div class="mySlides3">
-                        <img src="./img/projects/web01.PNG">
-                        <div class="text"><a href="/projects/webdesign/greekhistory/" target="_blank">The History of Greece</a>: A mock educational site created for my introduction to HTML class. This was originally an iterative project we worked on each week. After each lesson we would add whatever new tricks we had learned. Before this project I had not worked with HTML since the early 2000s and had never worked with a CSS before. My how times change!</div>
-                    </div>
-        
-
-                    <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                <div class="mySlides1">
+                    <img src="./img/projects/asp3.PNG">
+                    <div class="text"><a href="https://github.com/sdole86/TipCalculator" target="_blank">Tip
+                            Calculator</a>: A straight forward web application that requests the final cost of the
+                        user's meal and returns three different possible tip amounts. With this app you have no excuse
+                        not to leave a decent tip for your waiter!</div>
                 </div>
 
-                <div class="slideshow-container" id="javascript" style="display:none">
-                    <h2>Javascript</h2>
-                    <div class="mySlides4">
-                        <img src="./img/projects/js01.PNG">
-                        <div class="text"><a href="/projects/javascript/pokeatubby/index.html" target="_blank">Poke-a-Tubby</a>: This was the final for my introduction to Javascript class. This is a simple whack a mole style game with a Teletubby theme. I used a couple of tricks to make this one appear more "game-like" such as randomizing the placement of the "moles", randomizing which graphic was used, and randomizing how long the player has to "whack them". As an added bonus, this project contains Teletubby trivia at the bottom of the page. I'm sure this information will pay off should trivia night at the local pub ever include a children's programming question.</div>
-                    </div>
-                    <div class="mySlides4">
-                        <img src="./img/projects/js02.PNG">
-                        <div class="text"><a href="/projects/javascript/bwwjcarousel/index.html" target="_blank">Buffalo Wild Wings Carousel</a>: Another Javascript class assignment. This assignment was meant to teach us how to use code libraries, in this case JQuery. In this assignment I ended up playing around with the carousel feature. Can you tell I was hungry when I designed it?</div>
-                    </div>
-        
-
-                    <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+                <div class="mySlides1">
+                    <img src="./img/projects/asp4.PNG">
+                    <div class="text"><a href="https://github.com/sdole86/PriceQuotation" target="_blank">Price
+                            Quotation</a>: My first ASP.Net project and my first forray into the wide world of MVC.
+                        Pretty simple application that asks the user for total cost and discount amount and returns how
+                        much will be discounted and what the final sale price will be sans discount.</div>
                 </div>
 
-                <div class="slideshow-container" id="python" style="display:none">
-                    <h2>Python</h2>
-                    <div class="mySlides5">
-                        <img src="./img/projects/pyth01.PNG">
-                        <div class="text"><a href="https://github.com/sdole86/Snake" target="_blank">GitHub</a>: This one was built off a tutorial from Edureka to create a simple Snake-like game in Python. After finishing the tutorial I decided to implement some of my own customizations to the code including increasing difficulty as the player gains points as well as adding some additional classes to the code to make it more readable.</div>                       
-                    </div>
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
 
-                    <div class="mySlides5">
-                        <img src="./img/projects/pyth03.png">
-                        <div class="text"><a href="https://github.com/sdole86/InspirationGenerator" target="_blank">GitHub</a>:Another assignment from my coworker's Python class. This project calls a function that randomly selects a predefined quote and displays it to the user. Afterwards the user can specify if they want another quote or to quit the application..</div>                       
-                    </div>
 
-                    <div class="mySlides5">
-                        <img src="./img/projects/pyth02.png">
-                        <div class="text"><a href="https://github.com/sdole86/ModuleOperator" target="_blank">GitHub</a>: A coworker of mine started a Python course. In my journey to learn Python I asked him to share his lessons with me to see if I can figure them out despite having no formal experience with the language. This particular assignment was to understand how the module operator works. This code requests two numerical inputs from the user that set up a range. It then iterate through the range to check if that particular number is divisible by 3, 5, or both.</div>                       
-                    </div>
-        
-
-                    <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+            <div class="slideshow-container" id="cs" style="display:none">
+                <h2>C#</h2>
+                <div class="mySlides2">
+                    <img src="./img/projects/cs06.PNG">
+                    <div class="text"><a href="https://github.com/sdole86/Bank-Account-Manager" target="_blank">Bank
+                            Account Manager</a>: A forms app that stores and calculates user input data for withdrawals
+                        and deposits.</div>
                 </div>
+
+                <div class="mySlides2">
+                    <img src="./img/projects/cs08.PNG">
+                    <div class="text"><a href="https://github.com/sdole86/Rainfall-Data-Collector"
+                            target="_blank">Rainfall Data Collector</a>: A forms app that reads an external .txt file
+                        and outputs mathematical data. The data supplied to us by the professor had 90,000+ rows of data
+                        and this application was supposed to read line by line and come up with minimum, maximum,
+                        average rainfall from the inserted data.</div>
+                </div>
+
+                <div class="mySlides2">
+                    <img src="./img/projects/cs07.PNG">
+                    <div class="text"><a href="https://github.com/sdole86/Movie-Database" target="_blank">Movie
+                            Database</a>: A forms app that performs basic CRUD operations against a SQL database. The
+                        original SQL database was hosted on AWS and was shared among the class. It was an interesting
+                        experience to use this DB as my classmates entered number of improperly formatted entries that
+                        my application wasn't initially configured to handle. It was a great lesson on expecting the
+                        unexpected in development</div>
+                </div>
+
+                <div class="mySlides2">
+                    <img src="./img/projects/cs05.PNG">
+                    <div class="text"><a href="https://github.com/sdole86/Monthly-Payment-Calculator"
+                            target="_blank">Monthly Payment Calculator</a>: A forms app that takes purchase price, down
+                        payment amount, annual interest rate, and loan terms in months to calculate the amount require
+                        to finance and monthly payments.</div>
+                </div>
+
+                <div class="mySlides2">
+                    <img src="./img/projects/cs04.PNG">
+                    <div class="text"><a href="https://github.com/sdole86/Code-Translator" target="_blank">Code
+                            Translator</a>: A forms app that takes a user inputted "cipher" and either encrypts or
+                        decrypts a message. This project utilizes a modified Playfair-style Cipher which is a type of
+                        substitution cipher that can not handle numbers or special characters. This cipher utilizes a
+                        5x5 table of which only 25 characters are loaded, which is accomplished using a 2D array.</div>
+                </div>
+
+                <div class="mySlides2">
+                    <img src="./img/projects/cs03.PNG">
+                    <div class="text"><a href="https://github.com/sdole86/Pi-Calculator" target="_blank">Leibniz Pi
+                            Calculator</a>: A console app for using Leibniz's Pi formula to calculate pi to excessive
+                        amounts of iteration. This was a challenge meant to teach looping skills.</div>
+                </div>
+
+                <div class="mySlides2">
+                    <img src="./img/projects/cs02.PNG">
+                    <div class="text"><a href="https://github.com/sdole86/BMI-Heart-Rate-Calculator" target="_blank">BMI
+                            Heart Rate Calculator</a>: An early C# console application of mine. This app will take the
+                        user's weight, height, and age and will calculate what the overall BMI is (Obese / Overweight /
+                        Normal / Under) and what your resting heart rate would be at various intensities.</div>
+                </div>
+
+                <div class="mySlides2">
+                    <img src="./img/projects/cs01.PNG">
+                    <div class="text"><a href="https://github.com/sdole86/Flooring-Cost-Estimator" target="_blank">Floor
+                            Cost Estimator</a>: One of the first C# console apps I ever wrote. This was a simple
+                        assignment that asked us to take user input (width of floor, length of floor, and cost per
+                        square foot) and calculate how long the job would take to complete and what the final cost would
+                        be including labor and materials and format it appropriately.</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+
+            <div class="slideshow-container" id="web" style="display:none">
+                <h2>Web Development</h2>
+                <div class="mySlides3">
+                    <img src="./img/projects/web01.PNG">
+                    <div class="text"><a href="/projects/webdesign/greekhistory/" target="_blank">The History of
+                            Greece</a>: A mock educational site created for my introduction to HTML class. This was
+                        originally an iterative project we worked on each week. After each lesson we would add whatever
+                        new tricks we had learned. Before this project I had not worked with HTML since the early 2000s
+                        and had never worked with a CSS before. My how times change!</div>
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+            </div>
+
+            <div class="slideshow-container" id="javascript" style="display:none">
+                <h2>Javascript</h2>
+                <div class="mySlides4">
+                    <img src="./img/projects/js01.PNG">
+                    <div class="text">
+                        <a href="/projects/javascript/pokeatubby/index.html"
+                            target="_blank">Poke-a-Teletubby</a>: This was the final for my introduction to Javascript
+                        class. This is a simple whack a mole style game with a Teletubby theme. I used a couple of
+                        tricks to make this one appear more "game-like" such as randomizing the placement of the
+                        "moles", randomizing which graphic was used, and randomizing how long the player has to "whack
+                        them". As an added bonus, this project contains Teletubby trivia at the bottom of the page. I'm
+                        sure this information will pay off should trivia night at the local pub ever include a
+                        children's programming question.</div>
+                </div>
+                <div class="mySlides4">
+                    <img src="./img/projects/js02.PNG">
+                    <div class="text">
+                        <a href="/projects/javascript/bwwjcarousel/index.html" target="_blank">Buffalo Wild Wings Carousel</a>: Another Javascript class assignment. This assignment was meant to
+                        teach us how to use code libraries, in this case JQuery. In this assignment I ended up playing
+                        around with the carousel feature. Can you tell I was hungry when I designed it?</div>
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+            </div>
+
+            <div class="slideshow-container" id="python" style="display:none">
+                <h2>Python</h2>
+                <div class="mySlides5">
+                    <img src="./img/projects/pyth01.PNG">
+                    <div class="text">
+                        </b><a href="https://github.com/sdole86/Snake" target="_blank">Snake</a>: This one
+                        was built off a tutorial from Edureka to create a simple Snake-like game in Python. After
+                        finishing the tutorial I decided to implement some of my own customizations to the code
+                        including increasing difficulty as the player gains points as well as adding some additional
+                        classes to the code to make it more readable.</div>
+                </div>
+
+                <div class="mySlides5">
+                    <img src="./img/projects/pyth03.png">
+                    <div class="text">
+                        <a href="https://github.com/sdole86/InspirationGenerator" target="_blank">Inspiration Generator</a>: Another assignment from my coworker's Python class. This project
+                        calls a function that randomly selects a predefined quote and displays it to the user.
+                        Afterwards the user can specify if they want another quote or to quit the application..</div>
+                </div>
+
+                <div class="mySlides5">
+                    <img src="./img/projects/pyth02.png">
+                     <div class="text">
+                        <a href="https://github.com/sdole86/ModuleOperator" target="_blank">Module Operator</a>: A
+                        coworker of mine started a Python course. In my journey to learn Python I asked him to share his
+                        lessons with me to see if I can figure them out despite having no formal experience with the
+                        language. This particular assignment was to understand how the module operator works. This code
+                        requests two numerical inputs from the user that set up a range. It then iterate through the
+                        range to check if that particular number is divisible by 3, 5, or both.</div>
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+            </div>
 
         </div>
     </div>
 
     <div class="content" id="technologies">
         <h2>Technologies</h2>
-        <p>See below for languages and frameworks that I have hands on experience with.</p>
+        <p><b>See below for languages and frameworks that I have hands on experience with.</b></p>
         <div id="technology-grid">
             <div class="technology">
                 <img src="./img/technologies/logo_aspnet.png">
@@ -187,7 +270,7 @@
             </div>
             <div class="technology">
                 <img src="./img/technologies/logo_aspnetcore.png">
-                <P>ASP.Net Core</P>
+                <P>ASP.NetCore</P>
             </div>
             <div class="technology">
                 <img src="./img/technologies/logo_bootstrap.png">
@@ -225,9 +308,9 @@
                 <img src="./img/technologies/logo_typescript.png">
                 <P>Typescript</P>
             </div>
-            
+
         </div>
-        
+
     </div>
 
     <script src="./js/slideshow.js" defer></script>
@@ -241,7 +324,7 @@
                     <li>Ohio State University Medical Center</li>
                     <li>March 2022 to Present</li>
                 </div>
-                <div class="job-logo">    
+                <div class="job-logo">
                     <img src="./img/resume/osumc_logo.jpg">
                 </div>
             </div>
@@ -256,11 +339,11 @@
                 </div>
             </div>
             <div class="job-posting" id="osu-jpas">
-                <div class="job-description">     
+                <div class="job-description">
                     <li>Patient Access Coordinator Tier 2</li>
                     <li>Ohio State University Medical Center</li>
                     <li>July 2016 to October 2018</li>
-                </div>  
+                </div>
                 <div class="job-logo">
                     <img src="./img/resume/osumc_logo.jpg">
                 </div>
@@ -298,13 +381,44 @@
         </div>
     </div>
 
-    <div id="education">
+    <div class="content" id="credentials">
+        
+        <h2>Credentials</h2>
+        <div id="credential-section">
+            <div class="education">
+                <ul>
+                    <li>Ohio State University</li>
+                    <li>Bachelors of Arts: History</li>
+                    <li>Graduated 2014</li>
+                </ul>
+                <img src="img/credentials/logo_osu.png">
+            </div>
 
+            <div class="education">
+                <ul>
+                    <li>Columbus State Community College</li>
+                    <li>Associates of Applied Science: Software Development</li>
+                    <li>Graduated 2022</li>
+                </ul>
+                <img src="img/credentials/logo_cscc.png">
+            </div>
+
+            <div class="education">
+                <ul>
+                    <li>Microsoft Certified Solutions Associate: Windows 10</li>
+                    <li>Issued Apr 2019</li>
+                    <li>Graduated 2022</li>
+                </ul>
+                <img src="img/credentials/logo_microsoft.png">
+            </div>
+        </div>
     </div>
 
     <div class="content" id="contact-me">
         <h2>Contact Me</h2>
-        <P>If you would like to know more please reach out to me via LinkedIn or my personal email. I'm always eager to hear about new opportunities and speak with like minded individuals. If you want to see what projects I'm currently working on please visit my Github page.</P>
+        <P>If you would like to know more please reach out to me via LinkedIn or my personal email. I'm always eager to
+            hear about new opportunities and speak with like minded individuals. If you want to see what projects I'm
+            currently working on please visit my Github page.</P>
         <div class="icons" id="contact-me-icons">
             <a href="https://www.linkedin.com/in/samuel-dole-b3453814/"><img src="./img/linkedin_icon.png"></a>
             <a href="https://github.com/sdole86"><img src="./img/github_icon.png"></a>
@@ -317,4 +431,5 @@
     </footer>
 
 </body>
+
 </html>
