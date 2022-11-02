@@ -12,7 +12,7 @@ body {
 
 body::after {
   content: "";
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(/img/bg_tech.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(39, 29, 133, 0.5)), url(/img/bg_tech.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat:no-repeat;
@@ -41,7 +41,7 @@ p {
 }
 
 #navigation-bar{
-   background-color: #3B5469;
+   background-color: #1c405e;
    position: sticky;
    top: 0;
    color: #E8F8FF;
@@ -227,6 +227,26 @@ opacity: .5;
   
   
 }
+
+.training {
+  border:2px solid black;
+  border-radius: 5px;
+  width: 300px;
+  background-color: white;
+  box-shadow: 2px 2px;
+  margin-bottom: 20px;
+ 
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  
+  
+}
+
+.education img {
+  align-items: center;
+}
+
 .education ul {
   padding-inline-start: 0;
 }
@@ -240,11 +260,12 @@ opacity: .5;
   justify-content: center;
 }
 
-#credential-section{
+.credential-section{
   display: flex;
   flex-direction: row;
   justify-content: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .footer {  
@@ -318,7 +339,8 @@ opacity: .5;
   bottom: 0px;
   width: 100%;
   text-align: center;
-  background-color: #3B5469;
+  background-color: #1c405e;
+  font-weight: normal;
 }
 
 .text, a:visited, a:link {
