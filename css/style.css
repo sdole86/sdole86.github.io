@@ -12,7 +12,7 @@ body {
 
 body::after {
   content: "";
-  background-image: url(/img/bg_tech.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(/img/bg_tech.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat:no-repeat;
@@ -160,6 +160,10 @@ opacity: .5;
   padding: 0;
 }
 
+.technology p {
+  text-indent: 0;
+}
+
 #technology-grid{
   display: flex;
   align-items: center;
@@ -222,6 +226,13 @@ opacity: .5;
   flex-direction: column;
   
   
+}
+.education ul {
+  padding-inline-start: 0;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .education img {
