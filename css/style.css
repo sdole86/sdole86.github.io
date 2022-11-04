@@ -12,7 +12,7 @@ body {
 
 body::after {
   content: "";
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(39, 29, 133, 0.5)), url(/img/bg_tech.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(10, 7, 37, 0.5)), url(/img/bg_tech.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat:no-repeat;
@@ -88,12 +88,14 @@ p {
 #about-me{
   display: flex;
   flex-direction: row;
-  padding: 20px
+  padding: 20px;
+  align-items: center;
 }
 
 #about-me img {
   height: 300px;
   border-radius: 5%;
+
 }
 
 
