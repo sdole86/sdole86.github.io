@@ -386,7 +386,7 @@ opacity: .5;
   to {opacity: 1}
 }
 
-/* Mobile lay out */
+/* Mobile lay out
 
 @media (max-width: 425px){
   body{
