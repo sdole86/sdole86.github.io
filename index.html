@@ -44,9 +44,10 @@
             <div class="icons" id="project-icons">
                 <img src="./img/projects/aspnet.png" onclick="displayProjectSlideShow('dotnet')">
                 <img src="./img/projects/csharp.png" onclick="displayProjectSlideShow('cs')">
-                <img src="./img/projects/html.png" onclick="displayProjectSlideShow('web')">
-                <img src="./img/projects/javascript.png" onclick="displayProjectSlideShow('javascript')">
                 <img src="./img/projects/Python.png" onclick="displayProjectSlideShow('python')">
+                <img src="./img/projects/html.png" onclick="displayProjectSlideShow('web')">
+                <img src="./img/projects/javascript.png" onclick="displayProjectSlideShow('javascript')">               
+                <img src="./img/projects/react.png" onclick="displayProjectSlideShow('react')">
             </div>
         </div>
 
@@ -255,7 +256,22 @@
                 <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
             </div>
 
-        </div>
+            <div class="slideshow-container" id="react" style="display:none">
+                <h2>React</h2>
+                <div class="mySlides6">
+                    <img src="./img/projects/react02.PNG">
+                    <div class="text"><a href="https://godfather-eaw.pages.dev/" target="_blank">Electronic Business Card</a>: This was the first solo project as part of Scrimba's React course. This project tasked us with recreating an electronic business card template from <a href="https://www.figma.com/file/4ctPLUvIn5b5Ep6YPOZWWd/Digital-Business-Card?node-id=0%3A129&t=wFHIlH4UrVnFTpx6-0">Figma</a> and recreate it in React.</div>
+                </div>
+                <div class="mySlides6">
+                    <img src="./img/projects/react01.PNG">
+                    <div class="text"><a href="/projects/webdesign/greekhistory/" target="_blank">Axolotl Facts</a>: To help broaden my skill set I began following Scrimba's React training program. This is the first project as part of that program. A simple static page constructed with React to teach the student about basic React syntax and how components work. To add a little flavor I themed the page after the cutest amphibian you'll ever see.</div>
+                </div>
+                
+
+
+                <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+            </div>
     </div>
 
     <div class="content" id="technologies">
@@ -302,6 +318,10 @@
             <div class="technology">
                 <img src="./img/technologies/logo_python.png">
                 <P>Python</P>
+            </div>
+            <div class="technology">
+                <img src="./img/technologies/logo_react.png">
+                <P>React</P>
             </div>
             <div class="technology">
                 <img src="./img/technologies/logo_typescript.png">
@@ -493,9 +513,9 @@
         </div>
     </div>
 
-    <footer>
+    <div id="footer">
         Created by Samuel Dole | 2022 - All Right Reserved
-    </footer>
+    </div>
 
 </body>
 
